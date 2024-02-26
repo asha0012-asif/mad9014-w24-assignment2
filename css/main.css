@@ -1,0 +1,220 @@
+:root {
+    /* - Colors - */
+    --color-primary: #2D3142;
+    --color-primary-light: #4F5D75;
+    --color-secondary: #EF8354;
+    --color-secondary-pale: #BFC0C0;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #fff;
+}
+
+/* --- Containers ---  */
+.container {
+    width: min(65em, 100%);
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* --- Buttons ---  */
+.btn {
+    /* common styles */
+    display: inline-block;
+    padding: .55em 1.5em .5em;
+    background-color: var(--color-primary);
+    border: .125rem solid var(--color-primary);
+    color: #fff;
+    border-radius: .25em;
+
+    /* link necessary styles */
+    text-decoration: none;
+
+    /* button necessary styles */
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+    color: #fff;
+}
+
+/* --- Card Group --- */
+.card-group {
+    background-color: var(--color-secondary-pale);
+}
+
+.card-group .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    display: grid;
+    grid-template-areas: 
+    "card-group-title"
+    "card-grid";
+    gap: 2rem;
+}
+
+.card-group__title {
+    grid-area: "card-group-title";
+}
+
+/* --- Card Grid - Mobile--- */
+.card-grid {
+    grid-area: "card-grid";
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    gap: 1.5rem;
+    padding: 0;
+}
+
+/* --- Cards (this section will be modified!) --- */
+.card {
+    background-color: #fff;
+    border-radius: .5em;
+    box-shadow: 0 .25rem .5rem #0002;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover,
+.card:focus-visible {
+    box-shadow: 0 .25rem .75rem #0002;
+    cursor: pointer;
+}
+
+/* (this section may be modified!) */
+.card__image img {
+    border-radius: .5em .5em 0 0;
+
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* - Card Content (this section will be modified!) - */
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 2;
+    
+    padding: 1.5rem;
+}
+
+.card__content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.card__content-title {
+    margin-bottom: .5rem;
+}
+
+.card__content-price {
+    color: var(--color-secondary);
+}
+
+.card__content-text {
+    flex-grow: 2;
+}
+
+.card__content .btn {
+    margin-top: 1.5rem;
+    align-self: stretch;
+    text-align: center;
+}
+
+/* --- Type Hierarchy - Mobile Size --- */
+h1 {
+    font-size: 2.027rem;
+}
+
+h2 {
+    font-size: 1.802rem;
+}
+
+h3 {
+    font-size: 1.424rem;
+}
+
+h4 {
+    font-size: 1.266rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* --- MEDIA QUERIES --- */
+@media only screen and (min-width: 45em) {
+    /* --- Card Grid - Tablet --- */
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* --- Type Hierarchy - Tablet Size --- */
+    h1 {
+        font-size: 2.488rem;
+    }
+
+    h2 {
+        font-style: 2.074rem;
+    }
+
+    h3 {
+        font-style: 1.728rem;
+    }
+
+    h4 {
+        font-style: 1.44rem;
+    
+    }
+}
+
+@media only screen and (min-width: 60em) {
+     /* --- Card Grid - Laptop--- */
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* --- Type Hierarchy - Laptop Size --- */
+    h1 {
+        font-style: 2.986rem;
+    }
+    
+    h2 {
+        font-style: 2.488rem;
+    }
+
+    h3 {
+        font-style: 2.074rem;
+    }
+
+    h4 {
+        font-style: 1.728rem;
+    }
+}
