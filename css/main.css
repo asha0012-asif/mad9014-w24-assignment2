@@ -87,9 +87,9 @@ header h1 {
     padding: 0;
 }
 
-/* --- Cards (this section will be modified!) --- */
+/* --- Cards --- */
 .card {
-    background-color: #fff;
+    background-color: #f0f0f0;
     border-radius: .5em;
     box-shadow: 0 .25rem .5rem #0002;
 
@@ -99,21 +99,20 @@ header h1 {
 
 .card:hover,
 .card:focus-visible {
-    box-shadow: 0 .25rem .75rem #0002;
+    box-shadow: 0 .25rem 1.5rem #0002;
     cursor: pointer;
 }
 
-/* (this section may be modified!) */
 .card__image img {
     border-radius: .5em .5em 0 0;
 
     display: block;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 5 / 4;
     object-fit: cover;
 }
 
-/* - Card Content (this section will be modified!) - */
+/* - Card Content - */
 .card__content {
     display: flex;
     flex-direction: column;
@@ -124,10 +123,14 @@ header h1 {
 }
 
 .card__content-header {
+    flex-grow: 2;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+
+    gap: 0.5rem;
 }
 
 .card__content-title {

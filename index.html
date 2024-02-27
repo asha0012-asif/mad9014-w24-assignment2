@@ -1,158 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2 - Display Data</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 2 - Display Data</title>
 
-    <link rel="stylesheet" href="./css/css-reset.css">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <header>
-        <h1>Display Data</h1>
-    </header>
+        <!-- Roboto Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./css/css-reset.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
 
-    <main>
-        <section class="card-group">
-            <div class="container">
-                <h2 class="card-group__title">Products</h2>
+    <body>
+        <header>
+            <h1>Display Data</h1>
+        </header>
 
-                <ul class="card-grid">
-                    <!-- temp - each card will be appended with js code. -->
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="card__image">
-                            <img src="https://picsum.photos/200/300 " alt="about image">
-                        </div>
-                        
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <h3 class="card__content-title">Product Title</h3>
-                                <h4 class="card__content-price">$xxx.xx</h4>
-                            </div>
-                            <p class="card__content-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <a href="#" class="btn">Buy Now</a>
-                        </div>
-                    </li>
-                    <!-- temp - each card will be replaced and instead appended with js code. -->
-                </ul>
-            </div>
-        </section>
-    </main>
+        <main>
+            <section class="card-group">
+                <div class="container">
+                    <h2 class="card-group__title">Products</h2>
+                    <ul class="card-grid"></ul>
+                </div>
+            </section>
+        </main>
 
-    <script src="./js/data.js"></script>
-    <script src="./js/main.js"></script>
-</body>
+        <script src="./js/data.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
 </html>
