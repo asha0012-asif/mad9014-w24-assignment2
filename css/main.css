@@ -1,9 +1,10 @@
 :root {
     /* - Colors - */
-    --color-primary: #2D3142;
-    --color-primary-light: #4F5D75;
-    --color-secondary: #EF8354;
-    --color-secondary-pale: #BFC0C0;
+    --color-primary: #554D74;
+    --color-primary-light: #796EA8;
+    --color-secondary: #D3D9E9;
+    --color-accent: #6B8E23;
+    --color-white: #fff;
 }
 
 html {
@@ -19,7 +20,7 @@ header {
 
 header h1 {
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
 }
 
 /* --- Containers ---  */
@@ -37,7 +38,7 @@ header h1 {
     padding: .55em 1.5em .5em;
     background-color: var(--color-primary);
     border: .125rem solid var(--color-primary);
-    color: #fff;
+    color: var(--color-white);
     border-radius: .25em;
 
     /* link necessary styles */
@@ -53,12 +54,12 @@ header h1 {
 .btn:focus-visible {
     background-color: var(--color-primary-light);
     border-color: var(--color-primary-light);
-    color: #fff;
+    color: var(--color-white);
 }
 
 /* --- Card Group --- */
 .card-group {
-    background-color: var(--color-secondary-pale);
+    background-color: var(--color-secondary);
 }
 
 .card-group .container {
@@ -105,6 +106,7 @@ header h1 {
 
 .card__image img {
     border-radius: .5em .5em 0 0;
+    border-bottom: .125rem solid #0002;
 
     display: block;
     width: 100%;
@@ -138,7 +140,7 @@ header h1 {
 }
 
 .card__content-price {
-    color: var(--color-secondary);
+    color: var(--color-accent);
 }
 
 .card__content-text {
